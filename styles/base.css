@@ -85,14 +85,14 @@
     }
 
     main h1{
-        font-size: 20px;
-        font-weight: 600px;
+        font-size: 20;
+        font-weight: 600;
         text-align: center;
     }
 
     main section  h2{
         font-size: 20;
-        font-weight: 600px;
+        font-weight: 600;
         text-align: center; 
         border: 10px skyblue solid;
         background-color: skyblue;
@@ -116,7 +116,7 @@
         text-align: center;
         padding: 1rem 0;
         font-size: 20;
-        font-weight: 600px;
+        font-weight: 600;
         border: 10px skyblue solid;
         background-color: skyblue;
         border-radius: 2%;
