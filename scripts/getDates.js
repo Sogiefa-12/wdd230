@@ -21,6 +21,6 @@ function getWeatherData() {
     }
     })
 
-document.querySelector('.temp').innerHTML = temp;
+
 }
 document.querySelector('.temp').innerHTML = temp;
