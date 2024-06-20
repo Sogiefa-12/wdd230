@@ -1,5 +1,4 @@
-
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .card {
      
       display: grid;
@@ -213,4 +212,4 @@
         font-size: 12px;
         
     }
-  }
+}
