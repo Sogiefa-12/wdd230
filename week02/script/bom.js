@@ -28,8 +28,8 @@ button.addEventListener('click', function() {
 
 deleteButton.addEventListener('click', () => {
     if (input.value.length){
-        deleteButton.textContent = 'X';
-        li.append(deleteButton);
+        // deleteButton.textContent = 'X';
+        // li.append(deleteButton);
         list.removeChild(li);
         input.focus();
         input.value = '';
