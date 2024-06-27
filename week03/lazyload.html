@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Practice</title>
+    <meta name="author" content="Sarah Imarhenakhue Ogiefa">
+    <meta name="description" content="This Page is to Practice Lady or progressive web page loadiing">
+    <meta property="og:title" content="The Abuja FCT Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sogiefa-12.github.io/wdd230/week03/lazyload.html" >
+    <meta property="og:image" content="https://sogiefa-12.github.io/wdd230/images/Abuja-collage.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="heading"><h1>Progressive / Lazy Loading Practice</h1></div>
+    </header>
+
+    <main>
+        <img src="images/animals.jpg" class="fade-in" loading="lazy" alt="Little Birds">
+        <img src="images/sparrow.jpg" class="fade-in" loading="lazy" alt="A Sparrow by the water">
+        <img src="images/dove.jpg" class="fade-in" loading="lazy" alt="A Dove taking Bath">
+        <img src="images/collared.jpg" class="fade-in" loading="lazy" alt="Collored Pigeon">
+        <img src="images/wildlife.jpg" class="fade-in" loading="lazy" alt="A Bird Drinking Water">
+        <img src="images/bird-bath.jpg" class="fade-in" loading="lazy" alt="A Birth Bath">
+    </main>
+
+    <footer>
+        <p id="lastModified"> </p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>
