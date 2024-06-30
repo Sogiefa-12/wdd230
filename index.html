@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-       <img src="images/mypics.jpg" alt="Profile Phot">
+       <img src="images/mypics.webp" alt="Profile Phot">
        <span>Sarah Imarhenakhue Ogiefa</span>
        
     </header>
@@ -33,6 +33,14 @@
             </ul>
     </nav>
     <main >
+        <picture>
+            <div class="temple-label"><h3>Aba Temple</h3></div>
+            <source srcset="images/hero-small.webp 400w" media="(max-width: 400px)">
+            <source srcset="images/hero-large.webp 960w"  media="(min-width: 400px)">
+            <img src="images/hero-large.webp" alt="Aba Temple Picture">
+           
+        </picture>
+        
         <div class="stuff">
                 <h1>WDD 230: Web Frontend Development</h1>  
                 <hr>
@@ -60,6 +68,9 @@
                 </section>
         </div>
     </main>
+    <iframe id="map"
+  style="height: 800px; width: 100%; border: 0"
+  src="https://maps.google.com/maps?q=<1st Avenu Gwarimpa F close>&amp;output=embed"></iframe>
     <footer>
         <p>&copy; <span class="year"></span> Sarah Imarhenakhue Ogiefa, Nigeria </p>
 

@@ -30,9 +30,9 @@
     header img {
         width: 30%;
         height: 100%;
-       
         border-radius: 10%;
         align-self: center;
+        object-fit: contain;
     
     }
 
@@ -143,6 +143,31 @@
     .same a{
         color: white;
         font-weight: 800;
+    }
+
+    picture {
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        object-fit: contain;
+    }
+
+    .temple-label {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: sans-serif;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #fff;
+        background: rgb(0, 0, 0,0.6);
+
+    }
+
+    .stuff {
+        margin-top: 80px;
+        position: relative;
     }
 
     main h1{
