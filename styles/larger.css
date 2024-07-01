@@ -33,6 +33,7 @@
         font-size: larger;
         font-family: "Open Sans", "Helvetica Neue", sans-serif;
     }
+
     header img {
         width: 25%;
         height: 100%;
@@ -66,6 +67,7 @@
         justify-content: space-between;
         list-style-type: none;
     }
+
      nav ul li a {
         text-decoration: none;
     }
@@ -83,9 +85,6 @@
         font-size: large;
         text-decoration: none;
         text-align: center;
-        
-       
-             
     }
 
     .home a{
@@ -99,7 +98,6 @@
         display: flex;
         background: rgb(35, 35, 78);
         border: 25px solid rgb(35, 35, 78);
-        
         font-size: large;
         text-decoration: none;
         text-align: center;
@@ -113,8 +111,6 @@
         font-weight: 600;
         font-size: x-large;
     }
-
- 
 
     .navigation  ul  {
         padding: 10px;
@@ -216,8 +212,9 @@
         width: 100%;
         height: 70%;
         margin:10px;
-        border: #333 solid 3px solid;
+        border: #333 3px solid;
       
+    }
 
     .frame {
         justify-content: center;
@@ -225,7 +222,7 @@
         margin: auto;
     }
 
-    }
+    
     footer {
         padding: 1rem 0;
         font-size: large;
