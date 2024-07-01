@@ -7,20 +7,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-const api_url = 'https://api.openweathermap.org/data/2.5/weather?q=Abuja&appid=YOUR_API_KEY';
-
+const api_url =  'https://api.weatherbit.io/v2.0/current?lat=35.7721&lon=-78.63861&key=XXX&units=I';
 function getWeatherData() {
     fetch(api_url)
        .then(response => response.json())
        .then(data => {
 
        let temp = data.main.temp;
+
        if (temp>0) {
-        temp = temp * 9/5
-         + 32;
+        temp = temp * 9/5 + 32;
     }
-    })
-
-
+    return temp;
+    });
 }
-document.querySelector('.temp').innerHTML = temp;
+
+
+function getWeather() {
+    getWeatherData().then(temp => {
+        document.querySelector('.temp').innerHTML = `Temperature: ${Math.round(temp) + '°F'}`;
+    });
+}
+
+var visitCount = 0;
+
+if (localStorage.getItem('visitCount')) {
+    visitCount = parseInt(localStorage.getItem('visitCount')) + 1;
+    localStorage.setItem('visitCount', visitCount);
+    document.querySelector('.visit-count').innerHTML =`Number of Visit: ${visitCount}`; 
+    } else {
+    localStorage.setItem('visitCount', 1);
+    document.querySelector('.visit-count').innerHTML = 1;
+    
+}
+
