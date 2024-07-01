@@ -154,6 +154,10 @@
         object-fit: contain;
     }
 
+    .temple img {
+        height: 45vh;
+    }
+
     .temp-label {
         display: inline-block;
         position: relative;
