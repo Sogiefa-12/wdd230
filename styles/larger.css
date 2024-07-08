@@ -163,6 +163,7 @@
         font-size: larger;
         font-weight: 600;
         text-align: center;
+        font-weight: bold;
     }
 
     main section  h2{
@@ -262,4 +263,68 @@
         font-size: 12px;
         
     }
+    /*-------------Form Style--------*/
+    .my-form, fieldset{
+        margin: 2rem 0;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: .5rem 2%;
+        
+    }
+
+    .my-form legend {
+        color:rgb(4, 42, 63);
+        padding: .5rem;
+        font-size: larger;
+        font-weight: bold;
+
+    }
+
+    .my-form label {
+        display: block;
+        margin-bottom:.2rem;
+        padding-top: 1rem;
+        color: rgb(12, 92, 136);
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    .my-form input[type="text"],
+    .my-form input[type="password"],
+    .my-form input[type="email"],
+    .my-form input[type="number"],
+    .my-form button{
+        background-color: rgb(194, 191, 190) ;
+        display: block;
+        border: solid 1px #999;
+        border-radius: 6px;
+        padding: .75rem;
+        color: white;
+        width: 100%;
+        max-width: 400px;
+        appearance: none;
+    }
+
+    .my-form button{
+        border: none;
+        background-image: linear-gradient(rgb(33, 85, 113), rgb(4, 42, 63));
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        padding: .8rem 1rem;
+        border-radius: 6px;
+        width: 100%;
+        max-width: 400px;
+        margin: 2rem 2% -2rem 2%;
+        box-shadow: 1px 1px 4px #999;
+    }
+    .my-form input:required{
+        border-left:solid 8px red;
+    }
+    
+    .my-form input:required:valid{
+        border-bottom: solid 8px green !important;
+    }
+
 }
+

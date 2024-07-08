@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Home Page</title>
+    <meta name="author" content="Sarah Imarhenakhue Ogiefa">
+    <meta name="description" content="The Chamber of Commerce is a Hub for commercial and innovative activities within the Abuja Federal capital Territory creating a connection to the international community">
+    <meta property="og:title" content="The Abuja FCT Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sogiefa-12.github.io/wdd230/chamber/index.html" >
+    <meta property="og:image" content="https://sogiefa-12.github.io/wdd230/images/Abuja-collage.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/hero-logo.png" alt="page-logo">
+    </header>
+
+    <nav class="navigation">
+        <div id="menu"></div>
+        <ul>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About Us</a></li>
+            <li class="nav-item"><a href="#">News</a></li>
+            <li class="nav-item"><a href="#">Events</a></li>
+            <li class="nav-item"><a href="#">Membership</a></li>
+            <li class="nav-item"><a href="#">Webinars</a></li>
+            <li class="nav-item"><a href="#">Community</a></li>
+            <li class="nav-item"><a href="#">Business Directory</a></li>
+            <li class="nav-item"><a href="#">Join</a></li>
+            <li class="nav-item"><a href="#">Podcast</a></li>
+            <li class="nav-item"><a href="#">Kindness</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>REGISTRATION PORTAL</h1>
+        <form method="get" action="thankyou.html" class="app-form">
+
+            <fieldset>
+                <legend>Join Us Today !!!</legend>
+                <label for="first_name">First Name*</label>
+                <input type="text" id="first_name" name="first_name" required>
+                
+                <label for="last_name">Last Name*</label>
+                <input type="text" id="last_name" name="last_name" required>
+
+                <label for="position">Position*</label>
+                <input type="text" id="position" name="position" pattern="[A-za-z -]{7,}" required>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mobile">Mobile Phone*</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+
+                <label for="business_name">Business/Organization Name*</label>
+                <input type="text" id="business_name" name="business_name" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Membership</legend>
+            <label for="membership_type">Membership Level</label>
+            <select id="membership_type" name="membership_type" required>
+                <option value="">Select Membership Level</option>
+                <option value="npmembership">NP Membership (free)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+            
+            <label for="business_description">Business/Organization Description</label>
+            <textarea id="business_description" name="business_description" cols="40" rows="8" required></textarea>
+
+            <label for="timestamp">Timestamp</label>
+            <input type="hidden" id="timestamp" name="timestamp" readonly value="<?php echo date('Y-m-d H:i:s');?>">
+
+            <button type="submit">Join Today</button>
+        </fieldset>
+        </form>
+
+        <aside class="outside-form">
+            <h2>Membership Level Benefits</h2>
+            <ul>
+                <li>
+                    <strong>NP (Non Profit) Membership</strong>
+                    <ul>
+                        <li>Free access to Online Resources</li>
+                        <li>Access to Online Networking and Community Events</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Bronze Membership</strong>
+                    <ul>
+                        <li>Access to Online Resources</li>
+                        <li>Access to Online Networking and Community Events</li>
+                        <li>Priority in Member Recognition and Recognition Events</li>
+                        <li>Discount on Membership Dues</li>
+                        <li>Priority in Member Recognition and Recognition Events</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Silver Membership</strong>
+                    <ul>
+                        <li>Access to Online Resources</li>
+                        <li>Access to Online Networking and Community Events</li>
+                        <li>Priority in Member Recognition and Recognition Events</li>
+                        <li>Discount on Membership Dues</li>
+                        <li>Priority in Member Recognition and Recognition Events</li>
+                        <li>Access to Special Offers and Promotions</li>
+                        <li>Access to Special Offers and Promotions</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Gold Membership</strong>
+                    <ul>
+                        <li>Access to Online Resources</li>
+                        <li>Access to Online Networking and Community Events</li>
+                        <li>Priority in Member Recognition and Recognition Events</li>
+                        <li>Discount on Membership Dues</li>
+                        <li>Priority in Member Recognition and Recognition Events</li>
+                        <li>Access to Special Offers and Promotions</li>
+                        <li>Access to Special Offers and Promotions</li>
+                        <li>Access to exclusive events and promotions</li>
+                        <li>Access to exclusive events and promotions</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </aside>
+    </main>
+
+    <footer>  
+        <p>&copy; Sarah  Ogiefa | Developed for WDD230</p>
+        <p>last Modified: <span id="date"></span></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+
+</body>
+</html>
