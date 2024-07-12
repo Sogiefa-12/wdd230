@@ -1,0 +1,51 @@
+{
+    "family name": "Adetutu",
+    "Date moved into ward": "2/12/2015",
+    "Number of records": "10",
+    "Visited by bishopric?": "True",
+    "Individual family members":
+    [
+        {"name": "Ade Adetutu", 
+        "Gender": "Male",
+        "Date of birth": "1/15/1990"
+        },
+        {"name": "Adelaide Adetutu",
+        "Gender" : "Female",
+        "Date of birth": "12/10/1985"
+        },
+        {"name": "Adrian Adetutu",
+        "Gender": "Male",
+        "Date of birth": "7/25/1980"
+        },
+        {"name": "Adeline Adetutu",
+        "Gender": "Female",
+        "Date of birth": "3/18/1975"
+        },
+        {"name": "Adrienne Adetutu",
+        "Gender": "Female",
+        "Date of birth": "11/1/1970"
+        },
+        {"name": "Adeola Adetutu",
+        "Gender": "Female",
+        "Date of birth": "5/20/1965"
+        },
+        {"name": "Adolfo Adetutu",
+        "Gender": "Male",
+        "Date of birth": "9/25/1960"
+        },
+        {"name": "Adolph Adetutu",
+        "Gender": "Male",
+        "Date of birth": "3/10/1955"
+        },
+        {"name": "Adonis Adetutu",
+        "Gender": "Male",
+        "Date of birth": "12/5/1950"
+        },
+        {"name": "Adrianne Adetutu",
+        "Gender": "Female",
+        "Date of birth": "7/20/1945"
+        }
+
+    ]
+    
+}

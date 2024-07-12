@@ -56,7 +56,7 @@
                 <input type="email" id="email" name="email" required>
 
                 <label for="mobile">Mobile Phone*</label>
-                <input type="tel" id="mobile" name="mobilephone" pattern="[0-9]{11}" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
 
                 <label for="business_name">Business/Organization Name*</label>
                 <input type="text" id="business_name" name="business_name" required>
@@ -75,8 +75,9 @@
             
             <label for="business_description">Business/Organization Description</label>
             <textarea id="business_description" name="business_description" cols="40" rows="8" required></textarea>
-            <label for="timestamp"></label>
-            <input type="hidden" name="timestamp">
+
+            <label for="timestamp">Timestamp</label>
+            <input type="hidden" id="timestamp" name="timestamp" readonly value="<?php echo date('Y-m-d H:i:s');?>">
 
             <button type="submit">Join Today</button>
         </fieldset>
