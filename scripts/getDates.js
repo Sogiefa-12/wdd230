@@ -23,21 +23,21 @@ function getWeatherData() {
 }
 
 
-function getWeather() {
-    getWeatherData().then(temp => {
-        document.querySelector('.temp').innerHTML = `Temperature: ${Math.round(temp) + '°F'}`;
-    });
-}
+// function getWeather() {
+//     getWeatherData().then(temp => {
+//         document.querySelector('.temp').innerHTML = `Temperature: ${Math.round(temp) + '°F'}`;
+//     });
+// }
 
-var visitCount = 0;
+// var visitCount = 0;
 
-if (localStorage.getItem('visitCount')) {
-    visitCount = parseInt(localStorage.getItem('visitCount')) + 1;
-    localStorage.setItem('visitCount', visitCount);
-    document.querySelector('.visit-count').innerHTML =`Number of Visit: ${visitCount}`; 
-    } else {
-    localStorage.setItem('visitCount', 1);
-    document.querySelector('.visit-count').innerHTML = 1;
+// if (localStorage.getItem('visitCount')) {
+//     visitCount = parseInt(localStorage.getItem('visitCount')) + 1;
+//     localStorage.setItem('visitCount', visitCount);
+//     document.querySelector('.visit-count').innerHTML =`Number of Visit: ${visitCount}`; 
+//     } else {
+//     localStorage.setItem('visitCount', 1);
+//     document.querySelector('.visit-count').innerHTML = 1;
     
-}
+// }
 

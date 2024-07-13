@@ -1,11 +1,14 @@
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
 
 
-let api = 'd63c323e88ed73184e471fcf7dedf282';
+    const currentTemp = document.querySelector('#current-temp');
+    const weatherIcon = document.querySelector('#weather-icon');
+    const captionDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={d63c323e88ed73184e471fcf7dedf282}';
+
+
+
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat={49.748491452381174}&lon={6.6398304889691095}&units=imperial&appid={c4420ce86b47a02637420f83b4358983}';
 
 async function apiFetch() {
     try {
@@ -23,16 +26,11 @@ async function apiFetch() {
     }
 }
 
-apiFetch().then(data => {
-    currentTemp.innerHTML = data.main.temp;
-    weatherIcon.src = 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png';
-    captionDesc.innerHTML = data.weather[0].description;
-    displayResults();
-});
+apiFetch();
 
 function displayResults() {
     apiFetch().then((data) => {
-        currentTemp.innerHTML = data.main.temp;
+        currentTemp.innerHTML = `${data.main.temp}&deg;F`;
         weatherIcon.src = 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png';
         captionDesc.innerHTML = data.weather[0].description;
     });
