@@ -1,0 +1,86 @@
+[
+        {
+            "name":"Dantatad and Sons Ltd",
+            "address": "3rd Avenue close 4 Gwarimpa",
+            "phone": 985984939,
+            "website": "http://www.dantata.com",
+            "image": "chamber/images/Dantatad.png",
+            "membership": "Gold",
+            "years": "5 years"
+        },
+        {
+            "name":"Amazing Co Ltd",
+            "address": "12th Street close 10 Adeola",
+            "phone numbers": 987654321,
+            "website urls": "http://www.amazingco.com",
+            "image": "chamber/images/Amazing.png",
+            "membership": "Platinum",
+            "years": "3 years"
+        },
+
+        {
+            "name":"Fantatech Inc",
+            "address": "5th Avenue close 15 Maitama",
+            "phone": 989876543,
+            "website": "http://www.fantasticinc.com",
+            "image": "chamber/images/Fantatech.png",
+            "membership": "Silver",
+            "years": "2 years"
+        },
+
+        {
+            "name":"Superior Group",
+            "address": "7th Street close 20 Owada",
+            "phone": 981234567,
+            "website": "http://www.superiorgroup.com",
+            "image": "chamber/images/Superior.png",
+            "membership": "Bronze",
+            "years": "1 year"
+        },
+
+        {
+            "name":"Rickardez Corporation",
+            "address": "9th Street close 30 Ikeja",
+            "phone": 984567890,
+            "website": "http://www.excellentcorp.com",
+            "image": "chamber/images/Rickardez.png",
+            "membership": "Diamond",
+            "years": "4 years"
+        },
+
+        {
+            "name":"Top Tier Enterprises",
+            "address": "11th Street close 40 Oshodi",
+            "phone": 980987654,
+            "website": "http://www.topenterprises.com",
+            "image": "chamber/images/Top-tiers.png",
+            "membership": "Gold",
+            "years": "6 years"
+        },
+
+        {
+            "name":"Ultimate Luxury Group",
+            "address": "13th Street close 50 Lagos",
+            "phone": 983210987,
+            "website": "http://www.luxurygroup.com",
+            "image": "chamber/images/ultimate.png",
+            "membership": "Platinum",
+            "years": "7 years"
+        },
+
+        {
+            "name":"Exactuv International",
+            "address": "15th Street close 60 Kano",
+            "phone": 986543210,
+            "website": "http://www.excellentinternational.com",
+            "image": "chamber/images/Exactuv.png",
+            "membership": "Silver",
+            "years": "8 years"
+        }
+      
+
+
+
+]
+    
+

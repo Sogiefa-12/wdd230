@@ -324,6 +324,58 @@
         list-style: georgian;
     }
 
+    .directory {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .grid-container {
+        width: 100% ;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1rem;
+    }
+
+    .member {
+        padding: 1rem; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background: #f7f7f7;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .member h2 {
+        margin: 0.5rem 0;
+    }
+
+    .member p {
+        margin-bottom: 0.5rem;
+    }
+
+    .member a {
+        display: block;
+        margin-top: 1rem;
+        background:#00a0aa;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 4px;
+        text-decoration: none;
+
+    }
+
+    #list-view {
+        width: 100%;
+    }
+
+    #list-view .member {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+
+
 
 
 
