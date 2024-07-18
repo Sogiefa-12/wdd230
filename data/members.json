@@ -4,7 +4,7 @@
             "address": "3rd Avenue close 4 Gwarimpa",
             "phone": 985984939,
             "website": "http://www.dantata.com",
-            "image": "chamber/images/Dantatad.png",
+            "image": "https://sogiefa-12.github.io/wdd230/chamber/images/Amazing.png/Dantatad.png",
             "membership": "Gold",
             "years": "5 years"
         },
@@ -13,7 +13,7 @@
             "address": "12th Street close 10 Adeola",
             "phone numbers": 987654321,
             "website urls": "http://www.amazingco.com",
-            "image": "chamber/images/Amazing.png",
+            "image": "https://sogiefa-12.github.io/wdd230/chamber/images/Amazing.png",
             "membership": "Platinum",
             "years": "3 years"
         },
@@ -23,7 +23,7 @@
             "address": "5th Avenue close 15 Maitama",
             "phone": 989876543,
             "website": "http://www.fantasticinc.com",
-            "image": "chamber/images/Fantatech.png",
+            "image": "https://sogiefa-12.github.io/wdd230/chamber/images/Fantatech.png",
             "membership": "Silver",
             "years": "2 years"
         },
@@ -33,7 +33,7 @@
             "address": "7th Street close 20 Owada",
             "phone": 981234567,
             "website": "http://www.superiorgroup.com",
-            "image": "chamber/images/Superior.png",
+            "image": "https://sogiefa-12.github.io/wdd230/chamber/images/Superior.png",
             "membership": "Bronze",
             "years": "1 year"
         },
@@ -43,7 +43,7 @@
             "address": "9th Street close 30 Ikeja",
             "phone": 984567890,
             "website": "http://www.excellentcorp.com",
-            "image": "chamber/images/Rickardez.png",
+            "image": "https://sogiefa-12.github.io/wdd230/chamber/images/Rickardez.png",
             "membership": "Diamond",
             "years": "4 years"
         },
@@ -53,7 +53,7 @@
             "address": "11th Street close 40 Oshodi",
             "phone": 980987654,
             "website": "http://www.topenterprises.com",
-            "image": "chamber/images/Top-tiers.png",
+            "image": "https://sogiefa-12.github.io/wdd230/chamber/images/Top-tiers.png",
             "membership": "Gold",
             "years": "6 years"
         },
@@ -63,7 +63,7 @@
             "address": "13th Street close 50 Lagos",
             "phone": 983210987,
             "website": "http://www.luxurygroup.com",
-            "image": "chamber/images/ultimate.png",
+            "image": "https://sogiefa-12.github.io/wdd230/chamber/images/Ultimate.png",
             "membership": "Platinum",
             "years": "7 years"
         },
@@ -73,7 +73,7 @@
             "address": "15th Street close 60 Kano",
             "phone": 986543210,
             "website": "http://www.excellentinternational.com",
-            "image": "chamber/images/Exactuv.png",
+            "image": "https://sogiefa-12.github.io/wdd230/chamber/images/Exactuv.png",
             "membership": "Silver",
             "years": "8 years"
         }
@@ -82,5 +82,3 @@
 
 
 ]
-    
-
