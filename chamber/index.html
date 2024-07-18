@@ -37,7 +37,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="larger">
         <h1>THE ABUJA CHAMBER OF COMMERCE</h1>
         <section class="hero">
             <img src="images/Abuja-collage.png" alt="hero picture">
@@ -49,7 +49,9 @@
 
         <section class="events">
             <h2>Current Events</h2>
-            <p>Join Us at the these Upcoming events!</p>
+            <img src="images/business-summit.png" alt="business-summit" loading="lazy">
+            <h2>Join Us at the these Upcoming events!</h2>
+            <img src="images/africa-summit.png" alt="africa-summit" loading="lazy">
             <ul>
                 <li>Products Connects</li>
                 <li>Strategic Network Connect</li>
@@ -60,13 +62,17 @@
         </section>
 
         <section class="weather">
-            <h3>Current weather Conditions</h3>
-            <div class="temperature"></div>
-            <p>Todays Weather conditin report</p>
+            <h2>Abuja Nigeria</h2>
+                    <p id="current-temp">Temperature: </p>
+                    <p>The Current temperature in Abuja, Nigeria is <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" alt="Weather Icon">
+                        <figcaption></figcaption>
+                    </figure>
         </section>
 
         <section class="ads">
-            <h3>Company Spotlight</h3>
+            <h2>Company Spotlight</h2>
             <div class="ad">Cities Advertisemnt</div>
             <div class="ad">Local Products Adverts</div>
             <div class="ad">Servces Adverts</div>
@@ -78,6 +84,7 @@
         <p>last Modified: <span id="date"></span></p>
     </footer>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </body>
 </html>

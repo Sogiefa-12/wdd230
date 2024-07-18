@@ -1,60 +1,75 @@
-
 document.addEventListener('DOMContentLoaded', async () => {
-   const toggleViewBtn = document.querySelector('#toggle-view');
-   const gridView = document.querySelector('#grid-view');
-   const listView = document.querySelector('#list-view');
+  const gridBtn = document.querySelector('#grid-btn');
+  const listBtn = document.querySelector('#list-btn');
+  const gridView = document.querySelector('#grid-view');
+  const listView = document.querySelector('#list-view');
 
-   const response = await fetch('./data/members.json');
-   const members = await response.json();
+  const response = await fetch('https://sogiefa-12.github.io/wdd230/data/members.json');
+  const members = await response.json();
 
-   displayMembers("grid-view", members);
+  gridBtn.addEventListener('click', function (
+) {
+    gridView.innerHTML = '';
+    listView.innerHTML = '';
+    displayMembers('grid-view', members);
+  });
 
-   toggleViewBtn.addEventListener('click', function () {
-    if (gridView.style.display !== 'none') {
-        gridView.style.display = 'none';
-        listView.style.display = '';
-    }
-    else {
-        gridView.style.display = '';
-        listView.style.display = 'none';
-    }
-   });
+  listBtn.addEventListener('click', function (
+) {
+    gridView.innerHTML = '';
+    listView.innerHTML = '';
+    displayMembers('list-view', members);
+  });
 
-   async function displayMembers(viewId, members){
+  async function displayMembers(viewId, members) {
     const container = document.querySelector(`#${viewId}`);
     container.innerHTML = '';
 
     members.forEach(member => {
-        const card = document.createElement('div');
-        card.classList.add('member');
+      const card = document.createElement('div');
+      card.classList.add('member');
 
-        const title = document.createElement('h3');
-        title.textContent = member.name;
-        card.append(title);
+      const image = document.createElement('img');
+      image.src = member.image;
+      image.classList.add('lazy');
+      image.setAttribute('alt', member.name);
+      image.addEventListener('load', function (
+) {
+        image.classList.remove('lazy');
+      });
 
-        const addressP = document.createElement('p');
-        addressP.innerHTML = `<strong>Address:</strong> ${member.address}`;
-        card.append(addressP);
+      card.append(image);
 
-        const phoneP = document.createElement('p');
-        phoneP.innerHTML = `<strong>Phone:</strong> ${member.phone}`;
-        card.append(phoneP);
+      const title = document.createElement('h3');
+      title.textContent = member.name;
+      card.append(title);
 
-        const membershipP = document.createElement('p');
-        membershipP.innerHTML = `<strong>Membership:</strong> ${member.membership}`;
-        card.append(membershipP);
+      const addressP = document.createElement('p');
+      addressP.innerHTML = `<strong>Address:</strong> ${member.address}`;
+      card.append(addressP);
 
-        const yearsP = document.createElement('p');
-        yearsP.innerHTML = `<strong>Years:</strong>${member.years}`;
-        card.append(yearsP);
+      const phoneP = document.createElement('p');
+      phoneP.innerHTML = `<strong>Phone:</strong> ${member.phone}`;
+      card.append(phoneP);
 
-        const websiteLink = document.createElement('a');
-        websiteLink.href = member.website;
-        websiteLink.textContent = 'Visit Website';
-        card.append(websiteLink);
+      const membershipP = document.createElement('p');
+      membershipP.innerHTML = `<strong>Membership:</strong> ${member.membership}`;
+      card.append(membershipP);
 
-        container.append(card);
+      const yearsP = document.createElement('p');
+      yearsP.innerHTML = `<strong>Years:</strong> ${member.years}`;
+      card.append(yearsP);
 
+      const websiteLink = document.createElement('a');
+      websiteLink.href = member.website;
+      websiteLink.textContent = 'Visit Website';
+      card.append(websiteLink);
+
+      const websiteP = document.createElement('p');
+      websiteP.innerHTML = `<strong>Website:</strong> ${member.website}`;
+      card.append(websiteP);
+
+      container.append(card);
     });
-   }
+  }
 });

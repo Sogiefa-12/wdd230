@@ -8,7 +8,7 @@ const captionDesc = document.querySelector('figcaption');
 
 
 
-const url = 'http://api.openweathermap.org/data/2.5/weather?lat={49.748491452381174}&lon={6.6398304889691095}&units=imperial&appid={c4420ce86b47a02637420f83b4358983}';
+const url = '://api.openweathermap.org/data/2.5/weather?lat={49.748491452381174}&lon={6.6398304889691095}&units=imperial&appid={c4420ce86b47a02637420f83b4358983}';
 
 async function apiFetch() {
 try {
