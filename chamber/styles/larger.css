@@ -372,6 +372,10 @@ button {
     color: #007bff;
     margin-bottom: 0.5em;
   }
+
+  .larger {
+    background-color: rgb(221, 212, 212);
+  }
   
   /* Grid View Specific Styles */
   #grid-view {
@@ -406,7 +410,8 @@ button {
     }
 
     .events h2{
-        margin-bottom: 15px;
+        margin-top: 45px;
+        margin-bottom: 45px;
         font-size: 2.5rem;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -415,8 +420,9 @@ button {
         text-decoration: none;
         transition: color 0.7s ease;
         border-right: 5px;
-        box-shadow: #070c0c;
-        border-radius: 5%;
+        box-shadow: 5x solid #070c0c;
+        border: 10px solid rgb(170, 130, 130);
+        border-radius: 35px;
         color:  #033c40;
         background: white;
         width: 65%;
@@ -425,7 +431,8 @@ button {
         text-wrap: wrap;
         font-style: oblique;
         font-weight: bolder;
-        margin-left: 10px;
+        margin-left: 250px;
+        margin-right: 250px;
     }
 
 
@@ -463,7 +470,7 @@ button {
         transform: scale(1.1);
     }
 
-    .weather {
+    #weather {
         display: flex;
         flex-direction: column;
         justify-content: left;
@@ -474,9 +481,10 @@ button {
         gap: 10px;
     }
 
-    .weather h2 {
-        margin-bottom: 10px;
-        font-size: 2rem;
+    #weather h2 {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        font-size: 2.5rem;
         padding-top: 10px;
         padding-bottom: 10px;
         text-transform: uppercase;
@@ -484,8 +492,9 @@ button {
         text-decoration: none;
         transition: color 0.7s ease;
         border-right: 5px;
-        box-shadow: #070c0c;
-        border-radius: 5%;
+        box-shadow: 5x solid #070c0c;
+        border: 10px solid rgb(170, 130, 130);
+        border-radius: 35px;
         color:  #033c40;
         background: white;
         width: 65%;
@@ -494,35 +503,89 @@ button {
         text-wrap: wrap;
         font-style: oblique;
         font-weight: bolder;
-        margin-left: 10px;
+        margin-left: 250px;
+        margin-right: 250px;
     }
 
-    .weather p {
+    #weather h2:hover{
+        color: #00a0aa;
+    }
+
+  
+
+    #weather p, figcaption {
         margin-bottom: 10px;
+        border: 5px solid;
+        border-radius:78px;
+        border-color: rgb(170, 130, 130);
+        padding: 10px;
+        background-color: #5b4057;;
+        color: white;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-right: 800px;
+    }
+
+    #weather figcaption{
+        margin-right: 900px;
+    }
+
+    #weather p:first-of-type {
+        margin-right: 700px;
+    }
+
+    .spotlights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     
-    .ads {
-        display: block;
-        align-items: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        text-align: left;
-        gap: 10px;
+    .spotlight-ad {
+        margin-bottom: 40px;
+        border: 5px solid;
+        border-radius:10px;
+        border-color: rgb(170, 130, 130);
+        padding: 10px;
+        background-color: #5b4057;;
+        color: white;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-right: 100px;
         
     }
 
-    .ads h2{
-        margin-bottom: 10px;
-        font-size: 2rem;
+    #div1 {
+        margin-right: 500px;
+    }
+
+    #div2 {
+        margin-right: 400px;
+    }
+
+    #div3 {
+        margin-right: 300px;
+    }
+
+ 
+
+    .spotlight-ad:hover {
+        color: #d9db67;
+    }
+
+    #spotlights h2 {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        font-size: 2.5rem;
         padding-top: 10px;
         padding-bottom: 10px;
         text-transform: uppercase;
         letter-spacing: 1px;
         text-decoration: none;
         transition: color 0.7s ease;
-        box-shadow: #070c0c;
-        border-radius: 5%;
+        border-right: 5px;
+        box-shadow: 5x solid #070c0c;
+        border: 10px solid rgb(170, 130, 130);
+        border-radius: 35px;
         color:  #033c40;
         background: white;
         width: 65%;
@@ -531,14 +594,35 @@ button {
         text-wrap: wrap;
         font-style: oblique;
         font-weight: bolder;
-        margin-left: 10px;
+        margin-left: 250px;
+        margin-right: 250px;
     }
 
-    .larger {
-        background: #e3dede;
+    #spotlights h2:hover{
+        color: #00a0aa;
     }
 
 
+
+    .banner {
+        display: none;
+        background-color: #81b4ff;
+        color:#ffffff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .close {
+        background-color: #ffffff;
+        color: #000000;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 20px;
+        cursor:pointer;
+    }
 
   
  footer {
