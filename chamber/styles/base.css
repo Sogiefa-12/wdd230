@@ -502,19 +502,48 @@ button {
         margin-left: 10px;
     }
 
+    .weather ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
     .weather p {
         margin-bottom: 10px;
     }
 
+    .spotlights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
     
-    .ads {
-        display: inline-flex;
+    .spotlight-ad {
+        background-color: #f8d657;
+        border-radius: 5px;
+        padding:20px;
         align-items: center;
         margin-top: 30px;
-        margin-bottom: 30px;
         text-align: center;
-        gap: 10px;
+        margin-bottom: 20px;
         
+    }
+
+    .banner {
+        display: none;
+        background-color: #81b4ff;
+        color:#ffffff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .close {
+        background-color: #ffffff;
+        color: #000000;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 20px;
+        cursor:pointer;
     }
 
     
