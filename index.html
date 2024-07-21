@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <script src="scripts/links.js" defer></script>
+   
 </head>
 <body>
     <header>
@@ -46,49 +46,44 @@
         <div class="stuff">
                 <h1>WDD 230: Web Frontend Development</h1>  
                 <hr>
+
+                <h2>Learning Activities</h2>
                 <section class="card">
-                    <div class="col1">
-                        <h2>Learning Activities</h2>
-                        <ul>
-                            <li>Week 01: <a href="#">layout</a> | <a href="#">Media Query</a> | <a href="#">JS Pen</a></li>
-                            <li id="">Week 02:</li>
-                            <li>Week 03:</li>
-                            <li>Week 04:</li>
-                            <li>Week 05:</li>
-                            <li>Week 06:</li>
-                        </ul>
-                    
+                   
+                <div id="weeks" class="col1"> 
+                    <input type="text" id="search-input" placeholder="Search">
                 </div>
-                <div id="weeks" class="col1"> </div>
                 </section>
 
                 <section class="card">
-                    <div class="col2">
+                    <d class="col2">
             
                     <h2>Information</h2>
                     <p>Abuja Nigeria</p>
-                    <section id="weather">
-                        <h2>Current Weather</h2>
+                    <div id="weather">
+                        <h3>Current Weather</h3>
                         <figure>
                         <img id="weather-icon" src="" alt="Weather Icon">
                         <figcaption></figcaption>
                         </figure>
                         <p id="current-temp"></p>
                         <p id="current-weather"></p>
-                        <!-- <h3>3-Day Forecast</h3> -->
-                        <ul id="three-day-forecast"></ul>
-                    </section>
-                    <p class="visit-count"></p>
-                    <p><a href="https://codepen.io/OGIEFA-SARAH/pen/NWZKZym">Code Pen Url</a></p>
-                    <p> <a href="https://codepen.io/OGIEFA-SARAH/pen/WNqbWwB">Code Pen Url Pseudo Practice</a></p>
+                        <p class="visit-count"></p>
+                        <p><a href="https://codepen.io/OGIEFA-SARAH/pen/NWZKZym">Code Pen Url</a></p>
+                        <p> <a href="https://codepen.io/OGIEFA-SARAH/pen/WNqbWwB">Code Pen Url Pseudo Practice</a></p>
                     </div>
+                    
+                        
+                    
                 </section>
         </div>
-    </main>
 
-    <div class="frame">
-        <iframe id="map" loading="lazy" src="https://maps.google.com/maps?q=%3C1st+Avenu+Gwarimpa+F+close+flat+A+Block+4%3E&amp;output=embed"></iframe>
-    </div>
+        <section>
+            <div class="frame">
+                <iframe id="map" loading="lazy" src="https://maps.google.com/maps?q=%3C1st+Avenu+Gwarimpa+F+close+flat+A+Block+4%3E&amp;output=embed"></iframe>
+            </div>
+        </section>
+     </main>
     <footer>
         <p>&copy; <span class="year"></span> Sarah Imarhenakhue Ogiefa, Nigeria </p>
 
@@ -97,6 +92,8 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/getmenu.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js" ></script>
+
    
 </body>
 </html>
