@@ -533,7 +533,7 @@ button {
         border-radius:10px;
         border-color: rgb(170, 130, 130);
         padding: 10px;
-        background-color: #5b4057;;
+        background-color: #5b4057;
         color: white;
         font-weight: bold;
         margin-left: 10px;
@@ -579,25 +579,40 @@ button {
 
 
     .banner {
-        display: none;
-        background-color: #81b4ff;
-        color:#ffffff;
+        margin-top: 50px;
+        display: inline-flex;
+        color:#060606;
         padding: 20px;
         text-align: center;
         margin-top: 50px;
         margin-bottom: 50px;
     }
 
-    .close {
-        background-color: #ffffff;
-        color: #000000;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 50px;
+    .banner {
+        background-color: #d3d0d0;
+        padding: 10px;
+        margin-right: 76px;
+        margin-left: 15px;
+        border-radius: 55px;
+      }
+      
+      .banner h2,
+      .banner p {
+        margin: 5px;
+        padding: 10px;
+      }
+      
+      .close {
+        background-color: darkgray;
+        color: #d11313;
         font-size: 20px;
-        cursor:pointer;
-    }
-
+        padding: 10px;
+        border: 3px;
+        cursor: pointer;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 30%;
+      }
     
    footer {
     display: flex;
