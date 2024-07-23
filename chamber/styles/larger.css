@@ -64,7 +64,7 @@
 
      .sidebar img{
       grid-column: 2;
-      grid-row: 1/span auto;
+      grid-row: 1/span 2;
       width: 80%;
       height:45vh;
      }
@@ -420,14 +420,12 @@ button {
         text-decoration: none;
         transition: color 0.7s ease;
         border-right: 5px;
-        box-shadow: 5x solid #070c0c;
         border: 10px solid rgb(170, 130, 130);
         border-radius: 35px;
         color:  #033c40;
         background: white;
         width: 65%;
         text-align: center;
-        text-shadow: #8ca469;
         text-wrap: wrap;
         font-style: oblique;
         font-weight: bolder;
@@ -459,7 +457,7 @@ button {
         margin-bottom: 10px;
         display: flex;
         flex-wrap: wrap;
-        align-items: left;
+        justify-content: left;
         gap: 10px;
         margin-left: 35px;
         font-size: 1.5rem;
@@ -474,7 +472,6 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items: left;
         margin-top: 30px;
         margin-bottom: 30px;
         text-align: left;
@@ -492,14 +489,12 @@ button {
         text-decoration: none;
         transition: color 0.7s ease;
         border-right: 5px;
-        box-shadow: 5x solid #070c0c;
         border: 10px solid rgb(170, 130, 130);
         border-radius: 35px;
         color:  #033c40;
         background: white;
         width: 65%;
         text-align: center;
-        text-shadow: #8ca469;
         text-wrap: wrap;
         font-style: oblique;
         font-weight: bolder;
@@ -583,14 +578,12 @@ button {
         text-decoration: none;
         transition: color 0.7s ease;
         border-right: 5px;
-        box-shadow: 5x solid #070c0c;
         border: 10px solid rgb(170, 130, 130);
         border-radius: 35px;
         color:  #033c40;
         background: white;
         width: 65%;
         text-align: center;
-        text-shadow: #8ca469;
         text-wrap: wrap;
         font-style: oblique;
         font-weight: bolder;
@@ -619,14 +612,12 @@ button {
         text-decoration: none;
         transition: color 0.7s ease;
         border-right: 5px;
-        box-shadow: 5x solid #070c0c;
         border: 10px solid rgb(170, 130, 130);
         border-radius: 35px;
         color:  #033c40;
         background: white;
         width: 65%;
         text-align: center;
-        text-shadow: #8ca469;
         text-wrap: wrap;
         font-style: oblique;
         font-weight: bolder;
