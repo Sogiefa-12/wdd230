@@ -1,37 +1,41 @@
 
 
-    const currentTemp = document.querySelector('#current-temp');
-    const weatherIcon = document.querySelector('#weather-icon');
-    const captionDesc = document.querySelector('figcaption');
+const myApi = 'c4420ce86b47a02637420f83b4358983'
+const lat = 49.748491452381174
+const long = 6.6398304889691095
 
 
 
+const weatherEndpoint = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=${myApi}`;
 
-
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat={49.748491452381174}&lon={6.6398304889691095}&units=imperial&appid={c4420ce86b47a02637420f83b4358983}';
-
-async function apiFetch() {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data);
-            return data;
-        }
-        else {
-            throw Error(await response.text());
-        }
-    }catch (error) {
-        console.log(error);
+fetch(weatherEndpoint)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
     }
-}
+    return response.json();
+  })
+  .then(data => {
+    const { main, weather, list } = data;
+    const currentTemp = main.temp;
+    const fahrenheitTemp = (currentTemp * (9/5)) + 32;
+    const currentWeather = weather[0].description;
 
-apiFetch();
+    document.querySelector('#current-temp').innerText = `Current temperature: ${fahrenheitTemp}°F`;
+    document.querySelector('#current-weather').innerText = `Current weather: ${currentWeather}`;
 
-function displayResults() {
-    apiFetch().then((data) => {
-        currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-        weatherIcon.src = 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png';
-        captionDesc.innerHTML = data.weather[0].description;
-    });
-}
+    if (list) {
+      const threeDayForecast = list.slice(0, 3);
+
+      threeDayForecast.forEach((forecast) => {
+        const li = document.createElement('li');
+        const fahrenheitTemp = (forecast.main.temp * (9/5)) + 32;
+        li.innerText = `Forecast: ${forecast.dt_txt} - ${fahrenheitTemp}°F`;
+        document.querySelector('#three-day-forecast').appendChild(li);
+      });
+    }
+
+    document.querySelector('#weather-icon').src = `http://openweathermap.org/img/w/${weather[0].icon}.png`;
+    document.querySelector('figcaption').innerText = `${weather[0].description}`;
+  })
+  .catch(error => console.error('Error:', error));
