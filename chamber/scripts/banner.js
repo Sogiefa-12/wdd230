@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeButton = document.querySelector('.close');
     const banner = document.querySelector('.banner');
   
-    // Add console logs to verify element selection
-    console.log('Close Button:', closeButton);
+  
    
     closeButton.addEventListener('click', () => {
       
