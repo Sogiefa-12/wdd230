@@ -5,7 +5,8 @@ fetch(membersUrl)
 .then(members => {
     // Filter the gold and silver members
 const goldAndSilverMembers = members.filter(member => member.membership.toUpperCase() === 'GOLD' || member.membership.toUpperCase() === 'SILVER');
-
+const goldMembers = members.filter(member => member.membership.toUpperCase()==='GOLD');
+const silverMembers = members.filter(member => member.membership.toUpperCase()==='SILVER');
     // Check if there are enough gold and silver members to fill the spotlight ads
 if (goldAndSilverMembers.length >= document.querySelectorAll('.spotlight-ad').length) {
       // Select all elements with the "spotlight-ad" class
@@ -20,11 +21,19 @@ const spotlightMember = goldAndSilverMembers[randomIndex];
         goldAndSilverMembers.splice(randomIndex, 1);
 
         // Update the spotlight advertisement with the selected member's name and description
-spotlightAd.innerHTML = `<h3>${spotlightMember.membership} Membership: ${spotlightMember.name}</h3>`;
-        
+        spotlightAd.innerHTML = `<h3>${spotlightMember.membership} Membership: ${spotlightMember.name}</h3>`;
+
         if (spotlightMember.description) {
           spotlightAd.innerHTML += `<p>${spotlightMember.description}</p>`;
         }
+        
+        if (spotlightMember.membership === 'Gold') {
+          spotlightAd.innerHTML += `<p>${spotlightMember.membership} Membership: Meets Every Monday at 9AM</p>`;
+        } else if (spotlightMember.membership === 'Silver') {
+          spotlightAd.innerHTML += `<p>${spotlightMember.membership} Membership: Meets Every Tuesday at 4PM</p>`;
+        }
+        
+        
       });
     }
   })

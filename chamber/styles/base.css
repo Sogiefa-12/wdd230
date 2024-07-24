@@ -604,6 +604,25 @@ button {
         margin-bottom: 50px;
         border-radius: 30%;
       }
+
+      .site-plan {
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .site-plan h1{
+        text-align: center;
+
+      }
+
+      .site-plan h2{
+        padding: 10px;
+      }
+
+      .site-plan img{
+        padding: 10px;
+        margin-top: 25px;
+      }
     
    footer {
     display: flex;
