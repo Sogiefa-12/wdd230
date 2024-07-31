@@ -1,0 +1,81 @@
+{"weeks": [
+    {
+    "week": "week1",
+    "links": [
+            {
+                
+                "url": "week01/holygrail.html",
+                "title": "Introduction to HTML"
+            },
+            
+            {
+                "url": "week01/media-query.html",
+                "title": "mQueries"
+            },
+
+            {
+                "url": "week01/chamber-site-plan.html",
+                "title": "Chamber Site Plan"
+            }
+        ]
+    },
+    {"week": "week02",
+    "links": [
+            {
+                "url":"week02/bom.html",
+                "title": "Favorite Books of Mormon"
+            },
+            {
+                "url":"week02/design.html",
+                "title":"Design"
+            }
+        
+
+        ]
+    },
+    {
+        "week": "week03",
+        "links":[
+            {
+                "url":"week03/bom.html",
+                "title": " Continuation on Book of Mormon"
+            },
+            {
+                "url":"week03/lazyload.html",
+                "title":"Lazy Loading"
+            },
+            {
+                "url":"week03/responsive-images.html",
+                "title":"Responsive Images"
+            }
+        ]
+    },
+
+    {
+        "week": "week04",
+        "links":[
+            {
+                "url":"week04/Form-start/thanks.html",
+                "title": "Form Design "
+            },
+            {
+                "url":"week04/tablebuild.html",
+                "title":"Table Build"
+            }
+        ]
+    },
+    {
+        "week": "week05",
+        "links":[
+            {
+                "url":"week05/prophets.html",
+                "title": "Prophets"
+            },
+            {
+                "url":" week05/weather.html",
+                "title":"Weather API"
+            }
+        ]
+    }
+
+]}

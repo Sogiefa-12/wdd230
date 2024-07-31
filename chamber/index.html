@@ -9,16 +9,108 @@
     <meta property="og:title" content="The Abuja FCT Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sogiefa-12.github.io/wdd230/chamber/index.html" >
-    <meta property="og:image" content="https://sogiefa-12.github.io/wdd230/images/Abuja-collage.png">
+    <meta property="og:image" content="https://sogiefa-12.github.io/wdd230/chamber/images/hero-logo.png">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
-
+        <img src="images/hero-logo.png" alt="page-logo">
     </header>
 
+    <nav class="navigation">
+        <div id="menu"></div>
+        <ul>
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="../week01/chamber-site-plan.html">Chamber Site Plan</a></li>
+            <li class="nav-item"><a href="/chamber/discover.html">Discover</a></li>
+            <li class="nav-item"><a href="/chamber/join.html">Join</a></li>
+            <li class="nav-item"><a href="/chamber/directory.html">Chamber Directory</a></li>
+        </ul>
+    </nav>
+
+    <main class="larger">
+        <h1>THE ABUJA CHAMBER OF COMMERCE</h1>
+        <section class="hero">
+            <img src="images/Abuja-collage.png" alt="hero picture">
+            <h3>Panorama View of Abuja City FCT</h3>
+        </section>
+
+        <section class="events">
+            <h2>Current Events</h2>
+            <img src="images/business-summit.png" alt="business-summit" loading="lazy">
+            <h2>Join Us at the these Upcoming events!</h2>
+            <img src="images/africa-summit.png" alt="africa-summit" loading="lazy">
+            <ul>
+                <li>Products Connects</li>
+                <li>Strategic Network Connect</li>
+                <li>Marketers with Manufacturers Connect</li>
+                <li>Service Providers Connect</li>
+            </ul>
+
+        </section>
+
+         <!-- Weather section -->
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <figure>
+            <img id="weather-icon" src="#"  alt="Weather Icon">
+            <figcaption></figcaption>
+            </figure>
+            <p id="current-temp"></p>
+            <p id="current-weather"></p>
+           
+            <ul id="three-day-forecast"></ul>
+        </section>
+
+        <!-- Members section -->
+        <section id="spotlights">
+            <h2>Spotlight Advertisements</h2>
+            <p>Click to Join any of our Membership and Mentoring Groups</p>
+            <div class="spotlight-ad" id="div1">
+                <a href="https://sogiefa-12.github.io/wdd230/chamber/join.html"> 
+                    <h3>Gold Membership: Member Name</h3>
+                    <p>Member Description </p>
+                </a>
+            </div>
+            <div class="spotlight-ad" id="div2">
+                <a href="https://sogiefa-12.github.io/wdd230/chamber/join.html"> 
+                    <h3>Gold Membership: Member Name</h3>
+                    <p>Member Description </p>
+                </a>
+        </div>
+            <div class="spotlight-ad" id="div3">
+                <a href="https://sogiefa-12.github.io/wdd230/chamber/join.html">
+                    <h3>Silver Membership: Member Name</h3>
+                    <p>Member Description </p>
+                </a></div>
+            <div class="spotlight-ad" id="div4"><a href="https://sogiefa-12.github.io/wdd230/chamber/join.html"> 
+                <h3>Silver Membership: Member Name</h3>
+                <p>Member Description </p>
+            </a>
+        </div>
+        </section>
+
+        <section class="banner">
+           <div class="banner">   
+                <h2>Join us for our weekly meet and greet!</h2>
+                <p>Every Wednesday at 7:00 p.m.</p>
+                <button class="close">❌</button>
+            </div>
+        </section>
+  
+    </main>
+
+    <footer>  
+        <p>&copy; Sarah  Ogiefa | Developed for WDD230</p>
+        <p>last Modified: <span id="date"></span></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/adverts.js"></script>
+    <script src="scripts/banner.js"></script>
 
 </body>
 </html>

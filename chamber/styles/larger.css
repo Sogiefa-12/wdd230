@@ -1,0 +1,738 @@
+@media (min-width: 768px) {
+    body {
+        background-color: white;
+        color: rgb(2, 2, 44);
+        font-size: larger;
+    }
+
+    header{
+        display: flex;
+        position: absolute;
+    }
+
+    .larger h1{
+        text-align: center;
+        padding: 25px;
+    }
+     header img {
+        width: 10%;
+        position: relative;
+        display: block;
+     }
+
+     
+     .navigation ul {
+        display: flex;
+        list-style: none;
+        list-style-type: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px;
+        background: #5b4057;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+     }
+
+     .navigation a{
+        text-decoration: none;
+        color: rgb(246, 246, 252);
+        justify-content: space-between;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        float: right;
+     }
+
+     .hero {
+        display: block;
+     }
+
+     .hero img{
+        width: 100%;
+        height: 500px;
+        align-self: center;
+        justify-content: center;
+        
+     }
+
+     .hero h3{
+        padding: 15px;
+     }
+
+     /* .sidebar {
+      display: grid;
+      grid-template-columns: minmax(200px, 1fr) 1fr;
+      grid-gap:30px;
+      grid-template-rows: min-content;
+     }
+
+     .sidebar img{
+      grid-column: 2;
+      grid-row:  1/2;
+      width: 80%;
+      height:45vh;
+     }
+
+    
+     
+    .sidebar h3{
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 1rem 0;
+      color: white !important;
+      background-color: darkblue !important;
+      border-radius: 10px;
+      padding: 5px;
+      text-align: center;
+      border: 1px solid darkblue !important;
+      justify-content: center;
+      justify-self: center;
+      align-items: center;
+  }
+
+  .sidebar p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      font-weight: 700;
+  }
+       */
+
+
+    .sidebar {
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-gap: 10px;
+    }
+    
+    h3 {
+        grid-column: 1;
+        margin: 10px 0;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        justify-content: center;
+        border: 10px solid blue;
+        margin-right: 200px;
+        margin-left: 10px;
+        justify-items: center;
+        justify-self: center;
+    }
+    
+    p.rigth,
+    img {
+        grid-column: 2;
+        margin: 0 0 10px 10px;
+    }
+    
+    p.right {
+        text-align: right;
+    }
+    
+    .sidebar img{
+        width: 85%;
+        height: 80vh;
+        border-radius: 5%;
+    }
+      
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+   .discover-container{
+      display: block;
+      background: #5b4057;
+      min-height: 100vh;
+      padding: 10px, 10px;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .calendar-container {
+      background: #fff;
+      width: 450px;
+      border-radius: 10px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+      padding: 30px;
+      margin-bottom: 30px;
+  }
+  
+  .calendar-container header {
+      display: flex;
+      align-items: center;
+      padding: 25px 30px 10px;
+      justify-content: space-between;
+  }
+  
+  .calendar-navigation {
+      display: flex;
+  }
+  
+  .calendar-navigation span {
+      height: 38px;
+      width: 38px;
+      margin: 0 1px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 38px;
+      border-radius: 50%;
+      user-select: none;
+      color: #aeabab;
+      font-size: 1.9rem;
+  }
+  
+  .calendar-navigation span:last-child {
+      margin-right: -10px;
+  }
+  
+  .calendar-navigation span:hover {
+      background: #f2f2f2;
+  }
+  
+  .calendar-current-date {
+      font-weight: 500;
+      font-size: 1.45rem;
+  }
+  
+  .calendar-body {
+      padding: 20px;
+  }
+  
+  .calendar-body ul {
+      list-style: none;
+      flex-wrap: wrap;
+      display: flex;
+      text-align: center;
+  }
+  
+  .calendar-body .calendar-dates {
+      margin-bottom: 20px;
+  }
+  
+  .calendar-body li {
+      width: calc(100% / 7);
+      font-size: 1.07rem;
+      color: #414141;
+  }
+  
+  .calendar-body .calendar-weekdays li {
+      cursor: default;
+      font-weight: 500;
+  }
+  
+  .calendar-body .calendar-dates li {
+      margin-top: 30px;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+  }
+  
+  .calendar-dates li.inactive {
+      color: #aaa;
+  }
+  
+  .calendar-dates li.active {
+      color: #fff;
+  }
+  
+  .calendar-dates li::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  .calendar-dates li.active::before {
+      background: #6332c5;
+  }
+  
+  .calendar-dates li:not(.active):hover::before {
+      background: #e4e1e1;
+  }
+
+   /*-----------Form style-----------*/
+   .app-form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    max-width: 500px;
+}
+
+.app-form legend {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.app-form label {
+    display: block;
+    margin-bottom:.5rem;
+    margin-bottom: .1rem;
+    font-weight: bolder;
+}
+
+.app-form input, 
+.app-form select, 
+.app-form textarea{
+    display: block;
+    width: 96%;
+    padding:.5rem;
+    border: 1px solid #6c6565;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+.app-form input:focus {
+    outline: none;
+}
+
+.app-form button {
+    display: block;
+    width: 100%;
+    padding:.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.app-form button:focus {
+    outline: none;
+}
+.app-form button{
+    background-image: linear-gradient(#5b4057, #926d8c);
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+    box-shadow: 4px 4px 6px 4px rgba(0,0,0,0.2);
+    width: 96%;
+}
+
+.app-form button:hover {
+    background: #ddd;
+}
+
+.app-form button:active {
+    background: #dfbbbb;
+}
+
+.app-form input:required {
+    border-left: 8px solid red ;
+}
+
+.app-form input:required:valid{
+    border-bottom: 4px solid green ;
+}
+
+.outside-form {
+    display: block;
+    width: 100%;
+    padding:.5rem;
+    margin: .87rem;
+}
+
+.outside-form ul{
+    list-style: none;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem;
+}
+
+.outside-form ul li{
+    padding: 1rem;
+    list-style: georgian;
+}
+
+
+.directory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  #grid-container.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 1rem;
+  }
+  
+  #toggle-view.active {
+    background-color: #00a0aa;
+    color: white;
+  }
+  
+button {
+    margin-bottom: 1em;
+  }
+  
+  #grid-view,
+  #list-view {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2em;
+  }
+  
+  .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+  }
+  
+  .member h3 {
+    margin: 0;
+  }
+  
+  .member p {
+    margin-bottom: 0.5em;
+  }
+  
+  .member a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    margin-bottom: 0.5em;
+  }
+
+  .larger {
+    background-color: rgb(221, 212, 212);
+  }
+  
+  /* Grid View Specific Styles */
+  #grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1em;
+  }
+  
+  /* List View Specific Styles */
+  #list-view {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #list-view .member {
+    margin-bottom: 1em;
+  }
+
+
+    /* Chamber Home Page*/
+
+    .events{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top:15px;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .events h2{
+        margin-top: 45px;
+        margin-bottom: 45px;
+        font-size: 2.5rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: color 0.7s ease;
+        border-right: 5px;
+        border: 10px solid rgb(170, 130, 130);
+        border-radius: 35px;
+        color:  #033c40;
+        background: white;
+        width: 65%;
+        text-align: center;
+        text-wrap: wrap;
+        font-style: oblique;
+        font-weight: bolder;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+
+    .events h2:hover{
+        color: #00a0aa;
+    }
+
+    .events img{
+        width: 100%;
+        height: auto;
+        max-width: 700px;
+        max-height: 500px;
+        object-fit: cover;
+        margin-bottom: 35px;
+        transition: transform 0.7s ease;
+        margin-top: 35px;
+        border: 10px;
+        border-radius: 10%;
+        margin-left: 30px;
+        
+    }
+
+    .events ul li {
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 10px;
+        margin-left: 35px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .events ul li:hover{
+        transform: scale(1.1);
+    }
+
+    #weather {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: left;
+        gap: 10px;
+    }
+
+    #weather h2 {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        font-size: 2.5rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: color 0.7s ease;
+        border-right: 5px;
+        border: 10px solid rgb(170, 130, 130);
+        border-radius: 35px;
+        color:  #033c40;
+        background: white;
+        width: 65%;
+        text-align: center;
+        text-wrap: wrap;
+        font-style: oblique;
+        font-weight: bolder;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    #weather h2:hover{
+        color: #00a0aa;
+    }
+
+  
+
+    #weather p, figcaption {
+        margin-bottom: 10px;
+        border: 5px solid;
+        border-radius:78px;
+        border-color: rgb(170, 130, 130);
+        padding: 10px;
+        background-color: #5b4057;
+        color: white;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-right: 800px;
+    }
+
+    #weather figcaption{
+        margin-right: 900px;
+    }
+
+    #weather p:first-of-type {
+        margin-right: 700px;
+    }
+
+    .spotlights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    
+    .spotlight-ad {
+        margin-bottom: 40px;
+        border: 5px solid;
+        border-radius:10px;
+        border-color: rgb(170, 130, 130);
+        padding: 10px;
+        background-color: #5b4057;;
+        color: white;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-right: 100px;
+        
+    }
+
+    #div1 {
+        margin-right: 500px;
+    }
+
+    #div2 {
+        margin-right: 400px;
+    }
+
+    #div3 {
+        margin-right: 300px;
+    }
+
+ 
+
+    .spotlight-ad:hover {
+        color: #d9db67;
+    }
+
+    #spotlights h2 {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        font-size: 2.5rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: color 0.7s ease;
+        border-right: 5px;
+        border: 10px solid rgb(170, 130, 130);
+        border-radius: 35px;
+        color:  #033c40;
+        background: white;
+        width: 65%;
+        text-align: center;
+        text-wrap: wrap;
+        font-style: oblique;
+        font-weight: bolder;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    #spotlights h2:hover{
+        color: #00a0aa;
+    }
+
+    .banner {
+        display: inline-flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: .5rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: color 0.7s ease;
+        border-right: 5px;
+        border: 10px solid rgb(170, 130, 130);
+        border-radius: 35px;
+        color:  #033c40;
+        background: white;
+        width: 65%;
+        text-align: center;
+        text-wrap: wrap;
+        font-style: oblique;
+        font-weight: bolder;
+    }
+    
+
+   
+      
+    .banner h2,
+    .banner p {
+        margin: 5px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight:bolder;
+    }
+
+    .banner p{
+        font-size: larger;
+    }
+      
+    .close {
+        
+        background-color: darkgray;
+        color: #d11313;
+        font-size: 20px;
+        border: 3px;
+        cursor: pointer;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 30%;
+    }
+
+
+    .site-plan {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .site-plan h1{
+        text-align: center;
+        
+
+    }
+
+    .site-plan h2{
+        padding: 10px;
+    }
+
+    .site-plan img{
+        padding: 10px;
+        margin-top: 25px;
+    }
+    
+
+  
+ footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #5b4057;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+ }
+}   

@@ -1,0 +1,20 @@
+
+body{
+    display: block;
+    position: inherit;
+    font-size: larger;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    justify-content: center;
+    margin-left: 200px;
+}
+
+h5{
+    margin-left: 200px;
+    padding: 35px;
+}

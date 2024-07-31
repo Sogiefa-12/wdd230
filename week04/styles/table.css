@@ -1,0 +1,53 @@
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+thead,
+tbody {
+    border: 1px solid #ccc;
+}
+
+caption {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    caption-side: bottom;
+    color: lightslategray; 
+}
+
+tr:nth-child(even) {
+    background-color: #c5bfbf;
+}
+
+tr:first-child th, .col {
+    background-color: #7a4040;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: larger;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+tr:last-child th, tr:last-child th:nth-child(n+2) {
+    background-color: #7a4040;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: larger;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    
+}
+
+
+
+td {
+    padding: 8px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+}
+
+th {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
